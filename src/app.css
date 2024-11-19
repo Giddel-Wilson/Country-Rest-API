@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-nunito-sans bg-light-bg text-light-text dark:bg-dark-bg dark:text-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-dark-elements rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .input {
+    @apply bg-white dark:bg-dark-elements text-light-text dark:text-white placeholder-light-input dark:placeholder-white/70 shadow-md;
+  }
+}
